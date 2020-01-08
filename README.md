@@ -22,7 +22,7 @@ $ chmod +x backupmysql.sh
 $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/ApacheVhost/vhostapache.sh
 $ chmod +x vhostapache.sh
 ```
-#### Example Used ### #
+#### Example Used ####
 ```bash
 $ ./vhostapache.sh create example.com /var/dir
 ```
@@ -33,7 +33,7 @@ $ ./vhostapache.sh create example.com /var/dir
 $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/NginxProxyVhost/vhostnginx.sh
 $ chmod +x vhostnginx.sh
 ```
-#### Example Used ### #
+#### Example Used ####
 ```bash
 $ ./vhostnginx.sh  example.com 192.168.1.1
 ```
