@@ -16,3 +16,11 @@ $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/MySQL_Backup/ba
 $ chmod +x backupmysql.sh
 ```
 
+### For Apache Virtual Host ###
+
+```bash
+$ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/ApacheVhost/vhostapache.sh
+$ chmod +x vhostapache.sh
+```
+### Example Used ###
+$ ./vhostapache.sh create example.com /var/dir
