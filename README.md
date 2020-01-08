@@ -15,3 +15,4 @@ $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/MySQL_Backup/ba
 $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/MySQL_Backup/backupmysql.conf
 $ chmod +x backupmysql.sh
 ```
+
