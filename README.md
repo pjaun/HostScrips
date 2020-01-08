@@ -8,7 +8,7 @@ Bash Script to allow create or delete apache/nginx virtual hosts and Backup MysQ
 1. Download the script
 2. Apply permission to execute:
 
-### For MySQL Backup Database ###
+## For MySQL Backup Database ##
 
 ```bash
 $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/MySQL_Backup/backupmysql.sh
@@ -16,11 +16,24 @@ $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/MySQL_Backup/ba
 $ chmod +x backupmysql.sh
 ```
 
-### For Apache Virtual Host ###
+## For Apache Virtual Host ##
 
 ```bash
 $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/ApacheVhost/vhostapache.sh
 $ chmod +x vhostapache.sh
 ```
-### Example Used ###
+#### Example Used ### #
+```bash
 $ ./vhostapache.sh create example.com /var/dir
+```
+
+## For Nginx Virtual Host ##
+
+```bash
+$ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/NginxProxyVhost/vhostnginx.sh
+$ chmod +x vhostnginx.sh
+```
+#### Example Used ### #
+```bash
+$ ./vhostnginx.sh  example.com 192.168.1.1
+```
