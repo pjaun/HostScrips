@@ -29,6 +29,20 @@ server {
                 proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
                 proxy_pass http://$ip;
         }
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/nginx/ssl/science_cmu_ac_th_pack.crt; #Load ssl certificate and ca root
+    ssl_certificate_key /etc/nginx/ssl/science_cmu_ac_th.key; #load private key
+}
+server {
+    if (\$host = $domain) {
+        return 301 https://\$host\$request_uri;
+    } # managed by ssl
+
+
+        listen 80;
+        server_name $domain;
+    return 404; # managed by ssl
+
 }" > $sitesitesAvailabledomain
 then
         echo -e $"There is an ERROR creating $domain file"
