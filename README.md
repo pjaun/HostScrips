@@ -22,6 +22,13 @@ $ chmod +x backupmysql.sh
 $ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/ApacheVhost/vhostapache.sh
 $ chmod +x vhostapache.sh
 ```
+## For Make Mikrotik CHR On ProxMox ##
+
+```bash
+$ wget https://raw.githubusercontent.com/pjaun/HostScrips/master/MikrotikChr/Proxmox_chr_make.sh
+$ chmod +x Proxmox_chr_make.sh
+```
+
 #### Example Used ####
 ```bash
 $ ./vhostapache.sh create example.com /var/dir
@@ -37,3 +44,5 @@ $ chmod +x vhostnginx.sh
 ```bash
 $ ./vhostnginx.sh  example.com 192.168.1.1
 ```
+
+
