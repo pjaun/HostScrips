@@ -25,7 +25,7 @@ fi
 
 if  [ $DUMPALL = "y" ]; then
         echo -n "Creating list of all your databases..."
-        DBS=`mysql -h $HOST --user=$USER --password=$PASS -Bse "show databases;"`
+        DBS=`mysql -h $HOST --user=$USER --password=$PASS -Bse "show databases;" | grep -Ev "^(${EXCLUDED_DBS})`
         echo "done!"
 fi
 
