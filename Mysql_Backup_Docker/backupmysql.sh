@@ -55,6 +55,12 @@ if  [ $MAIL = "y" ]; then
         fi
 fi
 
+if [ $TELEGRAM = "y" ]; then
+    curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" \
+    -d chat_id="$CHAT_ID" \
+    -d text="$MESSAGE"
+fi
+
 if  [ $DELETE = "y" ]; then
         OLDDBS=`cd $BACKDIR; find . -name "*-mysqlbackup.sql.gz" -mtime +$DAYS`
         REMOVE=`for file in $OLDDBS; do echo -n -e "delete ${file}\n"; done` # will be used in FTP
